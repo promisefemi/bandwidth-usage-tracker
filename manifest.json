@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Bandwidth Usage Tracker",
+  "description": "An extension to track network/bandwidth usage ",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "image/icon.png"
+  }
+}
