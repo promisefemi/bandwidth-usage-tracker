@@ -3,8 +3,13 @@
   "name": "Bandwidth Usage Tracker",
   "description": "An extension to track network/bandwidth usage ",
   "version": "1.0",
+  "author": "https://twitter.com/mrpromisfemi",
+  "devtools_page": "devtools.html",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "image/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
