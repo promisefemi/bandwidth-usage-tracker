@@ -35,5 +35,5 @@ let extraInfoSec=[
 ]
 
 chrome.webRequest.onCompleted.addListener(function (request) {
-    console.log(request, "WEB REQUEST")
+    // console.log(request, "WEB REQUEST")
 },requestFilter,extraInfoSec)

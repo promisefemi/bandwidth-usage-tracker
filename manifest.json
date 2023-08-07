@@ -4,7 +4,6 @@
   "description": "An extension to track network/bandwidth usage ",
   "version": "1.0",
   "author": "https://twitter.com/mrpromisfemi",
-  "devtools_page": "devtools.html",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "image/icon.png"
@@ -17,5 +16,25 @@
   ],
   "host_permissions": [
     "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "requestwatch.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }
