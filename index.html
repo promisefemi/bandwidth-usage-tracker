@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XMLHTTP Request</title>
+</head>
+<body>
+
+<script>
+    let jsonPlaceholderURL = "https://jsonplaceholder.typicode.com/"
+    let requestObject = new XMLHttpRequest()
+    requestObject.addEventListener("load", function (responseObject) {
+        // console.log(responseObject)
+        // console.log(requestObject.response)
+    })
+    requestObject.addEventListener("progress", function (event) {
+        console.log(`
+            TOTAL: ${event.total}
+            LOADED: ${event.loaded}
+            LENGTH COMPUTABLE: ${event.lengthComputable}
+        `)
+    })
+    requestObject.open("GET", `${jsonPlaceholderURL}posts`)
+    // requestObject.open("GET", `./popup.html`)
+    requestObject.responseType = "json"
+    requestObject.send()
+
+</script>
+
+
+</body>
+</html>
